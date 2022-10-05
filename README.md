@@ -24,7 +24,7 @@
 
 #
 ## **Recommended settings for a better experience**
-<p>⚠️ - You must have downloaded and installed Fira code font before you can set it as your default editor font.</p>
+⚠️ - You must have downloaded and installed [Fira code font](https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip) before you can set it as your default editor font.
 <br>
 
 ```
@@ -49,4 +49,4 @@
 - Project Link - [Stylta material dark](https://github.com/utibeinyangetuk/stylta-material-dark)
 #
 
-### <p> 💕Contributions and very much welcomed. </p>
+### <p> 💕Contributions are very much welcomed. </p>
