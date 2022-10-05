@@ -1,0 +1,21 @@
+{
+  "name": "stylta-material-dark",
+  "displayName": "stylta material dark",
+  "description": "A material dark theme that looks like paper.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "stylta material dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stylta material dark-color-theme.json"
+      }
+    ]
+  }
+}
