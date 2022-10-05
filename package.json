@@ -1,21 +1,38 @@
 {
-  "name": "stylta-material-dark",
-  "displayName": "stylta material dark",
-  "description": "A material dark theme that looks like paper.",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.71.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "stylta material dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/stylta material dark-color-theme.json"
-      }
-    ]
-  }
+	"name": "stylta-material-dark",
+	"displayName": "stylta material dark",
+	"description": "A better version of vscode's default dark+ theme",
+	"version": "0.0.1",
+	"publisher": "utibeinyangetuk",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/utibeinyangetuk/stylta-material-dark"
+	},
+	"keywords": [
+		"theme",
+		"dark theme",
+		"flat theme",
+		"material theme",
+		"stylta",
+		"stylta material theme",
+		"dark",
+		"flat",
+		"material",
+		"dark+"
+	],
+	"engines": {
+		"vscode": "^1.71.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "stylta material dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/stylta material dark-color-theme.json"
+			}
+		]
+	}
 }
