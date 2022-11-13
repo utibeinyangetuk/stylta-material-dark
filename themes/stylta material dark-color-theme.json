@@ -52,7 +52,13 @@
 		"peekViewResult.background": "#212121",
 		"peekViewEditor.matchHighlightBackground": "#585858",
 		// drop down//////////////////////////
-		"dropdown.background": "#2c2b2ba2",
+		"dropdown.background": "#1e1e1e",
+		"dropdown.border": "#cecece1e",
+		// quick picker////////////////////////
+		"quickInput.background": "#1e1e1e",
+		"quickInputList.focusBackground": "#d3d3d336",
+		"quickInputList.focusForeground": "#ffffff",
+		"quickInputList.focusIconForeground": "#ffffff",
 		// input control///////////////////////
 		"input.background": "#1e1e1e",
 		"input.border": "#cecece5d",
@@ -74,6 +80,9 @@
 		"tab.unfocusedActiveBorder": "#ff0000",
 		"tab.hoverBorder": "#62c208",
 		"editorGroupHeader.tabsBackground": "#1e1e1e",
+		// breadcrumbs/////////////////////
+		"breadcrumb.focusForeground": "#aec506",
+		"breadcrumb.activeSelectionForeground": "#aec506"
 	},
 	"tokenColors": [
 		{
