@@ -1,52 +1,27 @@
-
 <div align="center">
 
 ## <h1>**Stylta Material Dark**</h1>
+
 <p>A better version of vscode's default dark+ theme.</p>
 </div>
 <br>
 
 ## **What's new**
 
-- Better syntax highlighting for html, css, js, etc.
+-  Better syntax highlighting.
 
-- Hover effects for buttons
-- All round flat design.
-- Terminal border for splitted terminals.
-- Easily know which tab is active and focused with the new colored borders.
-
-#
-## **Theme Screenshot**
-<br>
-
-![theme-screenshot](https://raw.githubusercontent.com/utibeinyangetuk/stylta-material-dark/master/Theme-screenshot.png)
-
+-   flat design.
+-  Terminal border for splitted terminals.
+-  colored borders for active and inactive tabs, etc
 
 #
-## **Recommended settings for a better experience**
-⚠️ - You must have downloaded and installed [Fira code font](https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip) before you can set it as your default editor font.
-<br>
 
-```
-{
-   "editor.padding.bottom": 12,
-
-    "editor.padding.top": 12,
-
-    "editor.lineHeight": 25,
-
-    "editor.fontWeight": "450",
-
-    "editor.fontFamily": "fira code Retina",
-     "editor.fontLigatures":"'cv05','zero','onum','cv14','cv17','ss04','cv18','cv16','cv31','cv30','cv29','cv27','ss10','ss07','ss06','cv28','cv32','cv26','cv25','ss09','cv21','cv23'",
-
-}
-```
-#
 ## **Contact**
-- Utibe Inyangetuk - <a href="mailto:inyangutibz@gmail.com">inyangutibz@gmail.com</a>
 
-- Project Link - [Stylta material dark](https://github.com/utibeinyangetuk/stylta-material-dark)
+-  Utibe Inyangetuk - <a href="mailto:inyangutibz@gmail.com">inyangutibz@gmail.com</a>
+
+-  Project Link - [Stylta material dark](https://github.com/utibeinyangetuk/stylta-material-dark)
+
 #
 
-### <p> 💕Contributions are very much welcomed. </p>
+### <p> Contributions are very much welcomed💕. </p>
