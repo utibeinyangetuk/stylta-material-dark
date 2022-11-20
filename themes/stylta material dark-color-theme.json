@@ -107,7 +107,7 @@
 			}
 		},
 		{
-			"scope": "header",
+			"scope": "meta.diff.header",
 			"settings": {
 				"foreground": "#000080"
 			}
@@ -121,10 +121,14 @@
 		},
 		{
 			"scope": [
-				"constant.numeric"
+				"constant.numeric",
+				"entity.name.operator.custom-literal.number",
+				"variable.other.enummember",
+				"keyword.operator.plus.exponent",
+				"keyword.operator.minus.exponent"
 			],
 			"settings": {
-				"foreground": "#b5cea8"
+				"foreground": "#a8c623"
 			}
 		},
 		{
@@ -142,13 +146,13 @@
 		{
 			"scope": "entity.name.tag.css",
 			"settings": {
-				"foreground": "#d7ba7d"
+				"foreground": "#916d1f"
 			}
 		},
 		{
 			"scope": "entity.other.attribute-name",
 			"settings": {
-				"foreground": "#d5a106",
+				"foreground": "#e9b005",
 			}
 		},
 		{
@@ -276,7 +280,7 @@
 		{
 			"scope": "storage",
 			"settings": {
-				"foreground": "#569cd6",
+				"foreground": "#2f8fdd",
 			}
 		},
 		{
@@ -297,7 +301,7 @@
 				"entity.name.operator.custom-literal.string"
 			],
 			"settings": {
-				"foreground": "#9e86679a"
+				"foreground": "#d2bda19a"
 			}
 		},
 		{
@@ -500,15 +504,10 @@
 			}
 		},
 		{
-			"name": "Variable and parameter name",
-			"scope": [
-				"variable",
-				"meta.definition.variable.name",
-				"support.variable",
-				"entity.name.variable"
-			],
+			"name": "parameters",
+			"scope": "variable.parameter",
 			"settings": {
-				"foreground": "#af6767"
+				"foreground": "#af6767",
 			}
 		},
 		{
