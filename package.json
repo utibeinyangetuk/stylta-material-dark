@@ -2,7 +2,7 @@
 	"name": "stylta-material-dark",
 	"displayName": "stylta material dark",
 	"description": "A better version of vscode's default dark+ theme",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"publisher": "utibeinyangetuk",
 	"repository": {
 		"type": "git",
