@@ -1,24 +1,26 @@
 {
 	"name": "stylta material dark",
 	"colors": {
-		// activity bar//////////////////////////
-		"activityBar.background": "#1e1e1e",
-		// menu //////////////////////////////
+		// activity bar
+		"activityBar.background": "#050202",
+		"activityBar.foreground": "#eeeee284",
+		"activityBar.activeBackground": "#ff0000",
+		// menu
 		"menu.background": "#1e1e1e",
 		"menu.foreground": "#d3d3d3dd",
 		"menu.border": "#cecece5d",
 		"menu.selectionBackground": "#eeeee200",
 		"menu.separatorBackground": "#cecece21",
 		"menu.selectionBorder": "#ffffff",
-		// list/////////////////////////////////
+		// list
 		"list.hoverBackground": "#3838385d",
 		"list.inactiveSelectionBackground": "#3838385d",
 		"list.activeSelectionBackground": "#3838385d",
 		"list.dropBackground": "#3838385d",
 		"list.inactiveFocusOutline": "#ffffff60",
 		"listFilterWidget.background": "#1e1e1e",
-		// editor//////////////////////////////
-		"editor.background": "#1e1e1e",
+		// editor
+		"editor.background": "#050202",
 		"editor.foreground": "#eeeee2",
 		"editorSuggestWidget.background": "#1e1e1e",
 		"editorHoverWidget.background": "#1e1e1e",
@@ -86,10 +88,7 @@
 	},
 	"tokenColors": [
 		{
-			"scope": [
-				"meta.embedded",
-				"source.groovy.embedded"
-			],
+			"scope": ["meta.embedded", "source.groovy.embedded"],
 			"settings": {
 				"foreground": "#D4D4D4"
 			}
@@ -152,7 +151,7 @@
 		{
 			"scope": "entity.other.attribute-name",
 			"settings": {
-				"foreground": "#e9b005",
+				"foreground": "#e9b005"
 			}
 		},
 		{
@@ -280,26 +279,23 @@
 		{
 			"scope": "storage",
 			"settings": {
-				"foreground": "#2f8fdd",
+				"foreground": "#2f8fdd"
 			}
 		},
 		{
 			"scope": "storage.type",
 			"settings": {
-				"foreground": "#569cd6",
+				"foreground": "#569cd6"
 			}
 		},
 		{
 			"scope": "storage.modifier",
 			"settings": {
-				"foreground": "#569cd6",
+				"foreground": "#569cd6"
 			}
 		},
 		{
-			"scope": [
-				"string",
-				"entity.name.operator.custom-literal.string"
-			],
+			"scope": ["string", "entity.name.operator.custom-literal.string"],
 			"settings": {
 				"foreground": "#d2bda19a"
 			}
@@ -335,9 +331,7 @@
 		},
 		{
 			"name": "Reset JavaScript string interpolation expression",
-			"scope": [
-				"meta.template.expression"
-			],
+			"scope": ["meta.template.expression"],
 			"settings": {
 				"foreground": "#d4d4d4"
 			}
@@ -394,10 +388,7 @@
 			}
 		},
 		{
-			"scope": [
-				"punctuation.section.embedded.begin.php",
-				"punctuation.section.embedded.end.php"
-			],
+			"scope": ["punctuation.section.embedded.begin.php", "punctuation.section.embedded.end.php"],
 			"settings": {
 				"foreground": "#569cd6"
 			}
@@ -416,11 +407,7 @@
 		},
 		{
 			"name": "coloring of the Java import and package identifiers",
-			"scope": [
-				"storage.modifier.import.java",
-				"variable.language.wildcard.java",
-				"storage.modifier.package.java"
-			],
+			"scope": ["storage.modifier.import.java", "variable.language.wildcard.java", "storage.modifier.package.java"],
 			"settings": {
 				"foreground": "#d4d4d4"
 			}
@@ -435,11 +422,7 @@
 		},
 		{
 			"name": "Function declarations",
-			"scope": [
-				"entity.name.function",
-				"support.function",
-				"support.constant.handlebars"
-			],
+			"scope": ["entity.name.function", "support.function", "support.constant.handlebars"],
 			"settings": {
 				"foreground": "#bd63e3"
 			}
@@ -500,21 +483,19 @@
 			"name": "Control flow keywords",
 			"scope": "keyword.control",
 			"settings": {
-				"foreground": "#d43422",
+				"foreground": "#d43422"
 			}
 		},
 		{
 			"name": "parameters",
 			"scope": "variable.parameter",
 			"settings": {
-				"foreground": "#af6767",
+				"foreground": "#af6767"
 			}
 		},
 		{
 			"name": "Object keys, TS grammar specific",
-			"scope": [
-				"meta.object-literal.key"
-			],
+			"scope": ["meta.object-literal.key"],
 			"settings": {
 				"foreground": "#9CDCFE"
 			}
@@ -561,10 +542,7 @@
 			}
 		},
 		{
-			"scope": [
-				"keyword.operator.or.regexp",
-				"keyword.control.anchor.regexp"
-			],
+			"scope": ["keyword.operator.or.regexp", "keyword.control.anchor.regexp"],
 			"settings": {
 				"foreground": "#DCDCAA"
 			}
@@ -613,10 +591,7 @@
 		},
 		{
 			"name": "meta.jsx.children.js",
-			"scope": [
-				"meta.jsx.children.js",
-				"meta.jsx.children.tsx"
-			],
+			"scope": ["meta.jsx.children.js", "meta.jsx.children.tsx"],
 			"settings": {
 				"foreground": "#d4d4d4"
 			}
@@ -640,28 +615,21 @@
 		},
 		{
 			"name": "Keyword, Storage",
-			"scope": [
-				"Keyword",
-				"Storage"
-			],
+			"scope": ["Keyword", "Storage"],
 			"settings": {
 				"fontStyle": ""
 			}
 		},
 		{
 			"name": "entity.name.method.js",
-			"scope": [
-				"entity.name.method.js"
-			],
+			"scope": ["entity.name.method.js"],
 			"settings": {
 				"fontStyle": ""
 			}
 		},
 		{
 			"name": "Language methods",
-			"scope": [
-				"variable.language"
-			],
+			"scope": ["variable.language"],
 			"settings": {
 				"fontStyle": ""
 			}
@@ -683,18 +651,13 @@
 			}
 		},
 		{
-			"scope": [
-				"meta.objectliteral.ts",
-				"meta.brace.round.ts"
-			],
+			"scope": ["meta.objectliteral.ts", "meta.brace.round.ts"],
 			"settings": {
 				"fontStyle": ""
 			}
 		},
 		{
-			"scope": [
-				"meta.expression.implicit.cshtml"
-			],
+			"scope": ["meta.expression.implicit.cshtml"],
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#c586c0"
