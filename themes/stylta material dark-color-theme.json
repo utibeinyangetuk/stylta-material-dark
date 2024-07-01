@@ -536,7 +536,7 @@
 			"name": "Control flow keywords",
 			"scope": "keyword.control",
 			"settings": {
-				"foreground": "#d43422"
+				"foreground": "#FF4500"
 			}
 		},
 		{
@@ -550,7 +550,8 @@
 			"name": "Object keys, TS grammar specific",
 			"scope": ["meta.object-literal.key"],
 			"settings": {
-				"foreground": "#9CDCFE"
+				"foreground": "#00BFFF",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -586,7 +587,7 @@
 		{
 			"scope": ["constant.character.character-class.regexp", "constant.other.character-class.set.regexp", "constant.other.character-class.regexp", "constant.character.set.regexp"],
 			"settings": {
-				"foreground": "#d16969"
+				"foreground": "#ff0"
 			}
 		},
 		{
