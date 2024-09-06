@@ -102,7 +102,7 @@
 		"diffEditor.insertedTextBackground": "#19f9d866",
 		"diffEditor.removedTextBackground": "#FF4B8266",
 		// Panel
-		"panel.border": "#000F0F",
+		"panel.border": "#001616bd",
 		"panelInput.border": "#001616",
 		"panelTitle.activeBorder": "#002424",
 		"panel.dropBorder": "#002424",
