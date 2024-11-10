@@ -5,7 +5,7 @@
 </div>
 
 <h3 align="center">
-  For detailed installation and customization instructions, check out our <a href="https://github.com/TylerAustInW/stylta-material-dark/blob/main/vsc-extension-quickstart.md">quickstart guide</a>.
+  For detailed installation and customization instructions, check out our <a href="https://github.com/TylerAustInW/stylta-material-dark/blob/Quickstart-MD/vsc-extension-quickstart.md">quickstart guide</a>.
 </p>
 
 <h3 align="center">Key Features</h3>
