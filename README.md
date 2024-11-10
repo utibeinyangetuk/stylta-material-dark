@@ -1,7 +1,11 @@
 <h3 align="center">Showcase 🎨</h3>
 
-<p align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/TylerAustInW/stylta-material-dark/refs/heads/Quickstart-MD/images/Showcase.png" alt="Stylta Material Dark Showcase">
+</div>
+
+<h3 align="center">
+  For detailed installation and customization instructions, check out our <a href="https://github.com/TylerAustInW/stylta-material-dark/blob/main/vsc-extension-quickstart.md">quickstart guide</a>.
 </p>
 
 <h3 align="center">Key Features</h3>
