@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/TylerAustInW/stylta-material-dark/raw/main/images/Showcase.png" alt="Stylta Material Dark Showcase">
+  <img src="https://raw.githubusercontent.com/TylerAustInW/stylta-material-dark/refs/heads/Quickstart-MD/images/Showcase.png" alt="Stylta Material Dark Showcase">
 </p>
 
 ## What's in the Folder 📂
