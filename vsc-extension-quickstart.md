@@ -12,7 +12,9 @@
 
 - Press `F5` to open a new window with your extension loaded.
 - Open `File > Preferences > Color Themes` and pick your color theme.
-- Open a file that has a language associated. The languages' configured grammar will tokenize the text and assign 'scopes' to the tokens. To examine these scopes, invoke the `Developer: Inspect Editor Tokens and Scopes` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+- Open a file that has a language associated. The languages' configured grammar will tokenize the text and assign 'scopes' to the tokens. To examine these scopes, invoke the `Developer: Inspect Editor Tokens and Scopes` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).<br>
+  More information at [Syntax-Highlight-Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide) For `Tokens and Scopes`
+  <br>
 
 ## Adopt Your Theme to Visual Studio Code 🎨
 
