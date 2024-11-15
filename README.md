@@ -1,7 +1,7 @@
 <h3 align="center">Showcase 🎨</h3>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TylerAustInW/stylta-material-dark/refs/heads/Quickstart-MD/images/Showcase.png" alt="Stylta Material Dark Showcase">
+  <img src="https://raw.githubusercontent.com/TylerAustInW/stylta-material-dark/refs/heads/main/images/Showcase.png" alt="Stylta Material Dark Showcase">
 </div>
 
 <h3 align="center">
