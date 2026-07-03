@@ -1,37 +1,43 @@
 {
 	"name": "stylta-material-dark",
-	"displayName": "stylta material dark",
-	"description": "A flat/material dark theme with good syntax highlighting.",
-	"version": "0.4.3",
+	"displayName": "Stylta Flow Dark",
+	"description": "",
 	"publisher": "utibeinyangetuk",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/utibeinyangetuk/stylta-material-dark"
-	},
-	"keywords": [
-		"theme",
-		"dark theme",
-		"flat theme",
-		"material theme",
-		"stylta",
-		"stylta material theme",
-		"dark",
-		"flat",
-		"material",
-		"dark+"
-	],
+	"version": "0.4.4",
+	"main": "index.js",
 	"engines": {
-		"vscode": "^0.10.5"
+		"vscode": "^1.70.0"
 	},
 	"categories": [
 		"Themes"
 	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "tsx watch src/build-theme.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/utibeinyangetuk/stylta-material-dark.git"
+	},
+	"keywords": [],
+	"author": "utibe inyangetuk",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/utibeinyangetuk/stylta-material-dark/issues"
+	},
+	"homepage": "https://github.com/utibeinyangetuk/stylta-material-dark#readme",
+	"devDependencies": {
+		"@types/node": "^26.1.0",
+		"tsx": "^4.22.4",
+		"typescript": "^6.0.3"
+	},
 	"contributes": {
 		"themes": [
 			{
-				"label": "stylta material dark",
+				"label": "Stylta Flow Dark",
 				"uiTheme": "vs-dark",
-				"path": "./themes/stylta material dark-color-theme.json"
+				"path": "./themes/Stylta-Flow-Dark.json"
 			}
 		]
 	}
