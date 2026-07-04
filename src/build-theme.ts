@@ -11,6 +11,7 @@ type semanticTokenColor = {
 	rules: Record<string, string>;
 };
 type VscodeTheme = {
+	$schema: string;
 	name: string;
 	type: 'dark' | 'light';
 	semanticHighlighting: boolean;
@@ -43,12 +44,30 @@ const baseColors = {
 	selection: '#1a1a1a',
 	dropBackground: '#0A0A0A',
 	transparent: '#00000000',
-	foreground: { pry: '#E0E0E0', sec: '#B3B3B3', inactive: '#8a8a8ae4', active: '#f5f5f5' },
-	error: { foreground: '#FF5370', background: '#2A1018' },
-	warning: { foreground: '#FFCB6B', background: '#102014' },
-	success: { foreground: '#C3E88D', background: '#102014' },
+	foreground: { pry: '#E0E0E0', sec: '#b3b3b3e6', inactive: '#8a8a8ae4', active: '#f5f5f5' },
+	error: {
+		foreground: '#FF5370',
+		background: '#2A1018',
+		border: '#D94360',
+	},
+	warning: {
+		foreground: '#FFCB6B',
+		background: '#102014',
+		border: '#D9AE54',
+	},
+	success: {
+		foreground: '#C3E88D',
+		background: '#102014',
+		border: '#A8CC76',
+	},
+	info: {
+		foreground: '#82AAFF',
+		background: '#101B2D',
+		border: '#6D95E8',
+	},
 };
 const darkTheme: VscodeTheme = {
+	$schema: 'vscode://schemas/color-theme',
 	name: 'Stylta Flow Dark',
 	type: 'dark',
 	semanticHighlighting: true,
@@ -56,7 +75,7 @@ const darkTheme: VscodeTheme = {
 		//Backgrounds
 		'editor.background': baseColors.background,
 		'statusBar.background': baseColors.background,
-		'dropdown.background':' baseColors.background',
+		'dropdown.background': baseColors.background,
 		'input.background': baseColors.background,
 		// 'badge.background': baseColors.background,
 		'panel.background': baseColors.background,
@@ -74,12 +93,10 @@ const darkTheme: VscodeTheme = {
 		'editorWidget.background': baseColors.background,
 		'statusBar.noFolderBackground': baseColors.background,
 		'statusBarItem.prominentBackground': baseColors.background,
-		'statusbar.background': baseColors.background,
 		'activityBar.background': baseColors.background,
 		'menu.background': baseColors.background,
 		'sideBar.background': baseColors.background,
 		'sideBarSectionHeader.background': baseColors.background,
-		'explorer.background': baseColors.background,
 
 		//Links
 		'textLink.foreground': '#82AAFF',
@@ -103,11 +120,7 @@ const darkTheme: VscodeTheme = {
 
 		// Welcome page and Walkthrough
 		'walkThrough.embeddedEditorBackground': baseColors.background,
-		'walkThrough.embeddedEditorForeground': baseColors.foreground.pry,
-		'walkThrough.embeddedEditorBorder': baseColors.border.pry,
 		'welcomePage.tileHoverBackground': baseColors.selection,
-		'welcomePage.productIconForeground': baseColors.foreground.pry,
-		'walkthrough.stepBadge.background': baseColors.button.pry,
 		'walkthrough.stepTitle.foreground': baseColors.foreground.pry,
 		'welcomePage.progress.background': baseColors.button.pry,
 
@@ -130,11 +143,47 @@ const darkTheme: VscodeTheme = {
 		//sideBar
 		'sideBar.border': baseColors.transparent,
 
+		//dropDown
+		'dropdown.border': baseColors.border.pry,
+		'dropdown.foreground': baseColors.foreground.sec,
+
 		// sash (the draggable divider between panels)
 		'sash.hoverBorder': baseColors.border.pry,
 
 		// Menu
 		'menu.border': baseColors.border.sec,
+
+		//SymbolIcon
+		'symbolIcon.arrayForeground': '#9CA3AF',
+		'symbolIcon.booleanForeground': '#D946EF',
+		'symbolIcon.classForeground': '#22D3EE',
+		'symbolIcon.constantForeground': '#FB923C',
+		'symbolIcon.constructorForeground': '#60A5FA',
+		'symbolIcon.enumeratorMemberForeground': '#FB923C',
+		'symbolIcon.eventForeground': '#60A5FA',
+		'symbolIcon.fieldForeground': '#F472B6',
+		'symbolIcon.fileForeground': '#9CA3AF',
+		'symbolIcon.folderForeground': '#A78BFA',
+		'symbolIcon.functionForeground': '#60A5FA',
+		'symbolIcon.interfaceForeground': '#22D3EE',
+		'symbolIcon.keyForeground': '#A78BFA',
+		'symbolIcon.keywordForeground': '#8B5CF6',
+		'symbolIcon.methodForeground': '#60A5FA',
+		'symbolIcon.moduleForeground': '#F43F5E',
+		'symbolIcon.namespaceForeground': '#F43F5E',
+		'symbolIcon.nullForeground': '#D946EF',
+		'symbolIcon.numberForeground': '#F97316',
+		'symbolIcon.objectForeground': '#C084FC',
+		'symbolIcon.operatorForeground': '#22D3EE',
+		'symbolIcon.packageForeground': '#F43F5E',
+		'symbolIcon.propertyForeground': '#D1D5DB',
+		'symbolIcon.snippetForeground': '#8B5CF6',
+		'symbolIcon.stringForeground': '#4ADE80',
+		'symbolIcon.structForeground': '#22D3EE',
+		'symbolIcon.textForeground': '#E5E7EB',
+		'symbolIcon.typeParameterForeground': '#E879F9',
+		'symbolIcon.unitForeground': '#F97316',
+		'symbolIcon.variableForeground': '#D1D5DB',
 
 		//Tabs
 		'tab.border': baseColors.transparent,
@@ -151,7 +200,9 @@ const darkTheme: VscodeTheme = {
 		'editorGroupHeader.border': baseColors.background,
 
 		//breadCrumbs
-		// 'breadcrumn'
+		'breadcrumb.foreground': baseColors.foreground.sec,
+		'breadcrumb.focusForeground': baseColors.foreground.pry,
+		'breadcrumb.activeSelectionForeground': baseColors.foreground.pry,
 
 		// List
 		'list.hoverBackground': baseColors.selection,
@@ -164,7 +215,6 @@ const darkTheme: VscodeTheme = {
 		'editorGroup.border': baseColors.border.sec,
 		'editorGroup.dropBackground': baseColors.dropBackground,
 		'editorGroupHeader.tabsBorder': baseColors.border.sec,
-		'editorGroupHeader.noTabsBorder': baseColors.border.sec,
 
 		//settings page
 		'settings.headerBorder': baseColors.border.sec,
@@ -179,6 +229,19 @@ const darkTheme: VscodeTheme = {
 		'button.border': baseColors.border.sec,
 		'button.secondaryBorder': baseColors.border.sec,
 		'button.separator': baseColors.border.sec,
+
+		//Input
+		'input.border': baseColors.border.pry,
+		'input.foreground': baseColors.foreground.pry,
+		'input.placeholderForeground': baseColors.foreground.sec,
+		'inputValidation.errorBorder': baseColors.error.border,
+		'inputValidation.errorBackground': baseColors.error.background,
+		'inputValidation.infoBorder': baseColors.info.border,
+		'inputValidation.infoBackground': baseColors.info.background,
+		'inputValidation.infoForeground': baseColors.info.foreground,
+		'inputValidation.warningBorder': baseColors.warning.border,
+		'inputValidation.warningForeground': baseColors.warning.foreground,
+		'inputValidation.warningBackground': baseColors.warning.background,
 
 		//TitleBar
 		'titleBar.activeBackground': baseColors.background,
