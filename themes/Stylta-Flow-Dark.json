@@ -83,6 +83,7 @@
     "gitDecoration.submoduleResourceForeground": "#C792EA",
     "gitlens.trailingLineBackgroundColor": "#00000000",
     "sideBar.border": "#00000000",
+    "sideBar.foreground": "#b3b3b3e6",
     "dropdown.border": "#bbbbbb29",
     "dropdown.foreground": "#b3b3b3e6",
     "sash.hoverBorder": "#bbbbbb29",

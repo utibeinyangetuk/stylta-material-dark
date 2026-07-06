@@ -48,7 +48,7 @@ const baseColors = {
   foreground: {
     pry: "#E0E0E0",
     sec: "#b3b3b3e6",
-    inactive: "#8a8a8ae4",
+    inactive: "#8a8a8a7a",
     active: "#f5f5f5",
     black: "#000000",
     highlight: "#82AAFF",
@@ -89,7 +89,6 @@ const darkTheme: VscodeTheme = {
     "statusBar.background": baseColors.background,
     "dropdown.background": baseColors.background,
     "input.background": baseColors.background,
-    // 'badge.background': baseColors.background,
     "panel.background": baseColors.background,
     "button.background": baseColors.button.pry,
     "breadcrumb.background": baseColors.background,
@@ -109,6 +108,10 @@ const darkTheme: VscodeTheme = {
     "menu.background": baseColors.background,
     "sideBar.background": baseColors.background,
     "sideBarSectionHeader.background": baseColors.background,
+
+    //indent trees in the sidebar
+    "tree.inactiveIndentGuidesStroke": "#1A1A1A",
+    "tree.indentGuidesStroke": "#222222",
 
     //Links
     "textLink.foreground": baseColors.blue,
@@ -130,6 +133,18 @@ const darkTheme: VscodeTheme = {
 
     //focusBorder
     focusBorder: baseColors.transparent,
+
+    //CodeLens
+    "editorCodeLens.foreground": baseColors.foreground.sec,
+    "editorLightBulb.foreground": "#FFCB6B",
+    "editorLightBulbAutoFix.foreground": "#C3E88D",
+
+    //Quickinnput
+    "quickInput.foreground": baseColors.foreground.sec,
+    "quickInputList.focusBackground": baseColors.hover.default,
+    "quickInputList.focusForeground": baseColors.foreground.pry,
+    "quickInputList.focusHighlightForeground": baseColors.blue,
+    "quickInputList.focusIconForeground": baseColors.blue,
 
     //foreground
     foreground: baseColors.foreground.pry,
@@ -179,6 +194,7 @@ const darkTheme: VscodeTheme = {
 
     //sideBar
     "sideBar.border": baseColors.transparent,
+    "sideBar.foreground": baseColors.foreground.sec,
 
     //dropDown
     "dropdown.border": baseColors.border.pry,
@@ -186,6 +202,20 @@ const darkTheme: VscodeTheme = {
 
     // sash (the draggable divider between panels)
     "sash.hoverBorder": baseColors.border.pry,
+
+    //Minimap
+    "minimap.selectionHighlight": "#82AAFF66",
+    "minimap.errorHighlight": "#FF537099",
+    "minimap.findMatchHighlight": "#FFCB6B66",
+
+    "minimap.foregroundOpacity": "#FFFFFF",
+
+    "minimap.selectionOccurrenceHighlight": "#89DDFF66",
+    "minimap.warningHighlight": "#F78C6C99",
+
+    "minimapGutter.addedBackground": "#C3E88D",
+    "minimapGutter.deletedBackground": "#FF5370",
+    "minimapGutter.modifiedBackground": "#82AAFF",
 
     // Menu
     "menu.border": baseColors.border.sec,
@@ -241,6 +271,15 @@ const darkTheme: VscodeTheme = {
     "breadcrumb.focusForeground": baseColors.foreground.pry,
     "breadcrumb.activeSelectionForeground": baseColors.foreground.pry,
 
+    //editorLine number
+    "editorLineNumber.foreground": baseColors.foreground.sec,
+    "editorLineNumber.activeForeground": baseColors.blue,
+
+    //keybinding label
+    "keybindingLabel.border": baseColors.border.pry,
+    "keybindingLabel.bottomBorder": baseColors.transparent,
+    "keybindingLabel.foreground": baseColors.foreground.pry,
+
     // List
     "list.hoverBackground": baseColors.selection,
     "list.inactiveSelectionBackground": baseColors.selection,
@@ -253,15 +292,36 @@ const darkTheme: VscodeTheme = {
     "editorGroup.dropBackground": baseColors.dropBackground,
     "editorGroupHeader.tabsBorder": baseColors.border.sec,
 
+    //badges
+    "badge.background": baseColors.blue,
+    "badge.foreground": baseColors.foreground.black,
+
     //settings page
     "settings.headerBorder": baseColors.border.sec,
     "settings.focusedRowBorder": baseColors.border.pry,
+
+    //Notifications
+    "notificationCenter.border": baseColors.border.pry,
+    "notificationCenterHeader.background": baseColors.background,
+    "notificationCenterHeader.foreground": baseColors.foreground.pry,
+    "notifications.background": baseColors.background,
+    "notifications.foreground": baseColors.foreground.sec,
+    "notificationToast.border": baseColors.border.pry,
+    "notificationLink.foreground": baseColors.foreground.highlight,
 
     //Scrollbar
     "scrollbar.shadow": "#00000022",
     "scrollbarSlider.background": baseColors.hover.default,
     "scrollbarSlider.hoverBackground": baseColors.hover.active,
-    "scrollbarSlider.activeBackground": "#82AAFF",
+    "scrollbarSlider.activeBackground": "#82AAFF66",
+
+    //activity bar
+    "activityBar.activeBorder": baseColors.transparent,
+    "activityBar.border": baseColors.transparent,
+    "activityBar.foreground": baseColors.foreground.pry,
+    "activityBar.inactiveForeground": baseColors.foreground.inactive,
+    "activityBarBadge.background": baseColors.blue,
+    "activityBarBadge.foreground": baseColors.foreground.black,
 
     // Button
     "button.hoverBackground": baseColors.button.pryHover,
@@ -309,6 +369,73 @@ const darkTheme: VscodeTheme = {
     "debugConsole.warningForeground": baseColors.warning.foreground,
     "debugExceptionWidget.background": baseColors.background,
     "debugExceptionWidget.border": baseColors.error.foreground,
+
+    //EditorOverviewRuler
+    "editorOverviewRuler.currentContentForeground": "#82AAFF",
+    "editorOverviewRuler.incomingContentForeground": "#C3E88D",
+    "editorOverviewRuler.commonContentForeground": "#8A8A8A",
+
+    // MergeEditor Conflict
+    "merge.currentHeaderBackground": "#82AAFF33",
+    "merge.currentContentBackground": "#82AAFF1A",
+    "merge.incomingHeaderBackground": "#C3E88D33",
+    "merge.incomingContentBackground": "#C3E88D1A",
+    "merge.border": baseColors.transparent,
+    "mergeEditor.conflict.handledFocused.border": "#82AAFF",
+    "mergeEditor.conflict.handledUnfocused.border": "#C3E88D",
+    "mergeEditor.conflict.handled.minimapOverViewRuler": "#C3E88D",
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#F78C6C",
+    "mergeEditor.conflict.unhandledFocused.border": "#82AAFF",
+    "mergeEditor.conflict.unhandledUnfocused.border": "#F78C6C",
+    "mergeEditor.conflictingLines.background": "#FF53701A",
+    "mergeEditor.change.background": "#C3E88D22",
+    "mergeEditor.change.word.background": "#C3E88D40",
+
+    // Charts
+    "charts.blue": "#82AAFF",
+    "charts.green": "#C3E88D",
+    "charts.orange": "#F78C6C",
+    "charts.purple": "#C792EA",
+    "charts.red": "#FF5370",
+    "charts.yellow": "#FFCB6B",
+    "charts.foreground": "#B3B3B3",
+    "charts.lines": "#222222",
+
+    //Editor Brackets
+    "editorBracketHighlight.foreground1": "#C792EA",
+    "editorBracketHighlight.foreground2": "#82AAFF",
+    "editorBracketHighlight.foreground3": "#89DDFF",
+    "editorBracketHighlight.foreground4": "#C3E88D",
+    "editorBracketHighlight.foreground5": "#FFCB6B",
+    "editorBracketHighlight.foreground6": "#F78C6C",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#FF5370",
+    "editorBracketPairGuide.activeBackground1": "#C792EAcc",
+    "editorBracketPairGuide.activeBackground2": "#82AAFFcc",
+    "editorBracketPairGuide.activeBackground3": "#89DDFFcc",
+    "editorBracketPairGuide.activeBackground4": "#C3E88Dcc",
+    "editorBracketPairGuide.activeBackground5": "#FFCB6Bcc",
+    "editorBracketPairGuide.activeBackground6": "#F78C6Ccc",
+    "editorBracketMatch.background": "#121212",
+    "editorBracketMatch.border": "#82aaff83",
+
+    // Icons
+    "selection.background": baseColors.selection,
+    errorForeground: baseColors.error.foreground,
+    "icon.foreground": baseColors.foreground.sec,
+    "progressBar.background": baseColors.blue,
+    "problemsErrorIcon.foreground": baseColors.error.foreground,
+    "problemsInfoIcon.foreground": baseColors.blue,
+    "problemsWarningIcon.foreground": baseColors.warning.foreground,
+
+    //diff editor
+    "diffEditor.diagonalFill": "#222222",
+    "diffEditor.insertedLineBackground": "#102014eb",
+    "diffEditor.insertedTextBackground": "#C3E88D33",
+    "diffEditor.removedLineBackground": "#2a1018eb",
+    "diffEditor.removedTextBackground": "#FF537033",
+    "diffEditor.unchangedCodeBackground": baseColors.background,
+    "diffEditor.unchangedRegionBackground": "#1A1A1A",
+    "diffEditor.unchangedRegionForeground": "#8A8A8A",
   },
   semanticTokenColors: {
     rules: {},
