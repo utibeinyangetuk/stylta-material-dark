@@ -3,8 +3,7 @@ type TokenColor = {
   scope: string | string[];
   settings: {
     foreground?: string;
-    background?: string;
-    fontStyle?: "italic" | "bold" | "underline";
+    fontStyle?: "italic" | "bold" | "underline" | "";
   };
 };
 type semanticTokenColor = {
