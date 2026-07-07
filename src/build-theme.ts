@@ -191,7 +191,6 @@ const darkTheme: VscodeTheme = {
     "gitlens.trailingLineBackgroundColor": baseColors.transparent,
 
     //sideBar
-    // TODO: Pick up from here
     "sideBar.border": baseColors.transparent,
     "sideBar.foreground": baseColors.foreground.sec,
     "sideBar.dropBackground": baseColors.dropBackground,
@@ -221,6 +220,10 @@ const darkTheme: VscodeTheme = {
 
     // Menu
     "menu.border": baseColors.border.sec,
+    "menu.selectionBackground": baseColors.selection,
+    "menu.foreground": baseColors.foreground.sec,
+    "menu.selectionBorder": baseColors.border.sec,
+    "menu.separatorBackground": baseColors.border.sec,
 
     //SymbolIcon
     "symbolIcon.arrayForeground": "#9CA3AF",
