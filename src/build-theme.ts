@@ -75,6 +75,11 @@ const baseColors = {
     default: "#121212",
     active: "#1A1A1A",
   },
+  stickyScroll: {
+    background: "#0a0a0a",
+    shadow: "#00000080",
+    hover: "#121212",
+  },
 };
 const darkTheme: VscodeTheme = {
   $schema: "vscode://schemas/color-theme",
@@ -204,16 +209,24 @@ const darkTheme: VscodeTheme = {
     // sash (the draggable divider between panels)
     "sash.hoverBorder": baseColors.border.pry,
 
+    //StickyScroll
+    "editorStickyScrollHover.background": baseColors.stickyScroll.hover,
+
+    //Panel
+    "panel.border": baseColors.transparent,
+    "panel.dropBorder": baseColors.border.pry,
+    "panelTitle.activeBorder": baseColors.border.active,
+    "panelTitle.activeForeground": baseColors.foreground.pry,
+    "panelTitle.inactiveForeground": baseColors.foreground.inactive,
+    "panelStickyScroll.background": baseColors.stickyScroll.background,
+
     //Minimap
     "minimap.selectionHighlight": "#82AAFF66",
     "minimap.errorHighlight": "#FF537099",
     "minimap.findMatchHighlight": "#FFCB6B66",
-
     "minimap.foregroundOpacity": "#FFFFFF",
-
     "minimap.selectionOccurrenceHighlight": "#89DDFF66",
     "minimap.warningHighlight": "#F78C6C99",
-
     "minimapGutter.addedBackground": "#C3E88D",
     "minimapGutter.deletedBackground": "#FF5370",
     "minimapGutter.modifiedBackground": "#82AAFF",
@@ -292,6 +305,18 @@ const darkTheme: VscodeTheme = {
     "list.inactiveFocusBackground": baseColors.selection,
     "list.focusBackground": baseColors.selection,
     "list.dropBackground": baseColors.dropBackground,
+    "list.activeSelectionForeground": baseColors.foreground.pry,
+    "list.errorForeground": baseColors.error.foreground,
+    "list.focusForeground": baseColors.foreground.active,
+    "list.filterMatchBackground": "#82AAFF22",
+    "list.filterMatchBorder": "#00000000",
+    "list.focusHighlightForeground": "#82AAFF",
+    "list.inactiveSelectionForeground": baseColors.foreground.inactive,
+    "list.highlightForeground": "#82AAFF",
+    "listFilterWidget.background": "#1A1A1A",
+    "listFilterWidget.noMatchesOutline": "#FF5370",
+    "list.invalidItemForeground": "#8A8A8A",
+    "list.warningForeground": "#FFCB6B",
 
     //EditorGroup
     "editorGroup.border": baseColors.border.sec,
@@ -351,14 +376,18 @@ const darkTheme: VscodeTheme = {
     "inputValidation.warningBorder": baseColors.warning.border,
     "inputValidation.warningForeground": baseColors.warning.foreground,
     "inputValidation.warningBackground": baseColors.warning.background,
+    "inputOption.activeBackground": "#121212",
+    "inputOption.activeBorder": baseColors.border.active,
+    "inputOption.activeForeground": baseColors.foreground.pry,
 
     //TitleBar
     "titleBar.activeBackground": baseColors.background,
     "titleBar.inactiveBackground": baseColors.background,
     "titleBar.activeForeground": baseColors.foreground.pry,
-    "titleBar.inactiveForeground": baseColors.foreground.inactive,
+    "titleBar.inactiveForeground": baseColors.foreground.sec,
 
     // Widget (find/replace, tooltip, suggest widget when typing and hovering and the rest)
+    "widget.border": baseColors.border.sec,
     "widget.shadow": "#00000022",
     "editorSuggestWidget.foreground": baseColors.foreground.sec,
     "editorSuggestWidget.highlightForeground": baseColors.foreground.highlight,
@@ -375,6 +404,10 @@ const darkTheme: VscodeTheme = {
     "debugConsole.warningForeground": baseColors.warning.foreground,
     "debugExceptionWidget.background": baseColors.background,
     "debugExceptionWidget.border": baseColors.error.foreground,
+
+    // ToolBar
+    "toolbar.hoverBackground": "#0A0A0A",
+    "toolbar.hoverOutline": "#eeeee264",
 
     //EditorOverviewRuler
     "editorOverviewRuler.currentContentForeground": "#82AAFF",
@@ -442,6 +475,49 @@ const darkTheme: VscodeTheme = {
     "diffEditor.unchangedCodeBackground": baseColors.background,
     "diffEditor.unchangedRegionBackground": "#1A1A1A",
     "diffEditor.unchangedRegionForeground": "#8A8A8A",
+
+    //PeekView
+    "peekView.border": baseColors.border.pry,
+    "peekViewEditor.background": baseColors.background,
+    "peekViewEditorGutter.background": baseColors.background,
+    "peekViewTitle.background": baseColors.background,
+    "peekViewResult.background": "#121212",
+    "peekViewResult.fileForeground": baseColors.foreground.pry,
+    "peekViewTitleDescription.foreground": baseColors.foreground.sec,
+    "peekViewTitleLabel.foreground": baseColors.foreground.pry,
+    "peekViewResult.selectionBackground": "#121212",
+    "peekViewResult.selectionForeground": "#E0E0E0",
+    "peekViewResult.matchHighlightBackground": "#FFCB6B33",
+    "peekViewEditor.matchHighlightBackground": "#82AAFF22",
+    "peekViewEditor.matchHighlightBorder": "#00000000",
+    "peekViewResult.lineForeground": baseColors.foreground.inactive,
+
+    //Terminal colors
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#82AAFF",
+    "terminal.ansiGreen": "#C3E88D",
+    "terminal.ansiCyan": "#89DDFF",
+    "terminal.ansiRed": "#FF5370",
+    "terminal.ansiMagenta": "#C792EA",
+    "terminal.ansiYellow": "#FFCB6B",
+    "terminal.ansiWhite": "#E0E0E0",
+    "terminal.ansiBrightBlack": "#8A8A8A",
+    "terminal.ansiBrightBlue": "#A6C8FF",
+    "terminal.ansiBrightGreen": "#D7F5A7",
+    "terminal.ansiBrightCyan": "#A5EAFF",
+    "terminal.ansiBrightRed": "#FF7B93",
+    "terminal.ansiBrightMagenta": "#DDB3FF",
+    "terminal.ansiBrightYellow": "#FFE082",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+    "terminalCursor.foreground": "#82AAFF",
+
+    //command center
+    "commandCenter.border": baseColors.border.pry,
+
+    //Debug icon
+    "debugIcon.breakpointForeground": "#FF5370",
+    "debugIcon.breakpointCurrentStackframeForeground": "#FFCB6B",
+    "debugIcon.breakpointDisabledForeground": baseColors.foreground.inactive,
   },
   semanticTokenColors: {
     rules: {
