@@ -112,6 +112,46 @@ const darkTheme: VscodeTheme = {
     "sideBar.background": baseColors.background,
     "sideBarSectionHeader.background": baseColors.background,
 
+    //editor
+    "editor.foreground": baseColors.foreground.pry,
+    "editor.selectionBackground": "#121212",
+    "editor.inactiveSelectionBackground": "#3732325e",
+    "editor.foldBackground": "#121212a5",
+    "editorIndentGuide.background1": "#1A1A1A",
+    "editorIndentGuide.activeBackground1": "#82AAFF",
+    "editor.selectionHighlightBackground": "#373232a9",
+    "editor.findMatchBackground": "#82AAFF44",
+    "editor.findMatchBorder": baseColors.border.active,
+    "editor.findMatchHighlightBackground": "#82AAFF22",
+    "editor.findMatchHighlightBorder": baseColors.transparent,
+    "editor.hoverHighlightBackground": "#82aaff31",
+    "editor.wordHighlightBackground": "#82AAFF18",
+    "editor.wordHighlightStrongBackground": "#82AAFF25",
+    "editor.lineHighlightBorder": baseColors.border.sec,
+    "editor.lineHighlightBackground": "#bbbbbb12",
+    "editorWhitespace.foreground": baseColors.background,
+    "editorRuler.foreground": "#222222",
+    "editorOverviewRuler.border": "#00000000",
+    "editorOverviewRuler.findMatchForeground": "#82AAFF99",
+    "editorOverviewRuler.rangeHighlightForeground": "#89DDFF88",
+    "editorOverviewRuler.selectionHighlightForeground": "#82AAFFCC",
+    "editorOverviewRuler.wordHighlightForeground": "#82AAFF88",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#82AAFFCC",
+    "editorOverviewRuler.modifiedForeground": "#82AAFF",
+    "editorOverviewRuler.addedForeground": "#C3E88D",
+    "editorOverviewRuler.deletedForeground": "#FF5370",
+    "editorOverviewRuler.errorForeground": "#FF5370",
+    "editorOverviewRuler.warningForeground": "#FFCB6B",
+    "editorOverviewRuler.infoForeground": "#82AAFF",
+    "editorGutter.background": baseColors.background,
+    "editorGutter.modifiedBackground": "#82AAFF",
+    "editorGutter.addedBackground": "#C3E88D",
+    "editorGutter.deletedBackground": "#FF5370",
+    "editorError.foreground": "#FF5370",
+    "editorWarning.foreground": "#FFCB6B",
+    "editorInfo.foreground": "#82AAFF",
+    "editorGutter.foldingControlForeground": "#B3B3B3",
+
     //indent trees in the sidebar
     "tree.inactiveIndentGuidesStroke": "#1A1A1A",
     "tree.indentGuidesStroke": "#222222",
@@ -211,6 +251,7 @@ const darkTheme: VscodeTheme = {
 
     //StickyScroll
     "editorStickyScrollHover.background": baseColors.stickyScroll.hover,
+    "editorStickyScroll.border": "#3333335b",
 
     //Panel
     "panel.border": baseColors.transparent,
@@ -273,7 +314,7 @@ const darkTheme: VscodeTheme = {
     //Tabs
     "tab.border": baseColors.transparent,
     "tab.inactiveBackground": baseColors.background,
-    "tab.inactiveForeground": baseColors.foreground.inactive,
+    "tab.inactiveForeground": baseColors.foreground.sec,
     "tab.activeBackground": baseColors.background,
     "tab.activeForeground": baseColors.foreground.active,
     "tab.activeModifiedBorder": baseColors.border.active,
