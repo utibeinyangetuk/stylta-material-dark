@@ -1,5 +1,5 @@
 {
-  "name": "stylta-material-dark",
+  "name": "stylta-flow-dark",
   "displayName": "Stylta Flow Dark",
   "description": "Stylta Flow Dark is a premium true-black VS Code theme designed for clarity, focus, and long coding sessions, featuring semantic color harmony, vibrant syntax accents, and carefully balanced contrast.",
   "publisher": "utibeinyangetuk",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/utibeinyangetuk/stylta-material-dark"
+    "url": "git+https://github.com/utibeinyangetuk/stylta-flow-dark"
   },
   "keywords": [
     "theme",
@@ -47,9 +47,9 @@
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/utibeinyangetuk/stylta-material-dark/issues"
+    "url": "https://github.com/utibeinyangetuk/stylta-flow-dark/issues"
   },
-  "homepage": "https://github.com/utibeinyangetuk/stylta-material-dark#readme",
+  "homepage": "https://github.com/utibeinyangetuk/stylta-flow-dark#readme",
   "devDependencies": {
     "@types/node": "^26.1.0",
     "tsx": "^4.22.4",
