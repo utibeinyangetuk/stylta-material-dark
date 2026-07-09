@@ -3,8 +3,8 @@
   "displayName": "Stylta Flow Dark",
   "description": "Stylta Flow Dark is a premium true-black VS Code theme designed for clarity, focus, and long coding sessions, featuring semantic color harmony, vibrant syntax accents, and carefully balanced contrast.",
   "publisher": "utibeinyangetuk",
+  "icon": "images/stylta-flow.png",
   "version": "0.4.4",
-  "main": "index.js",
   "engines": {
     "vscode": "^1.70.0"
   },
