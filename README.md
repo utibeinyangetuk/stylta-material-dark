@@ -101,7 +101,7 @@ Specialized highlighting for:
 
 ### WelcomePage
 
-![Screenshot of a dark themed Visual Studio Code welcome page showing extension branding and workspace navigation panels in a modern editor interface](images/welcomepage.png)
+![Screenshot of a dark themed Visual Studio Code welcome page showing extension branding and workspace navigation panels in a modern editor interface](images/welcomePage.png)
 
 ---
 
